@@ -7,6 +7,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -46,4 +57,13 @@ border-radius: 20px !important;
   width: 15px;
   margin-right: 5px;
   padding-bottom: 2px;
+}
+.border-left-none{
+  border-right: none !important;
+}
+.bg-none{
+  background: none !important;
+}
+.form-control:focus{
+  border-color: none !important;
 }
